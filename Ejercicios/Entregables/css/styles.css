@@ -1,0 +1,66 @@
+:root {
+  --fuenteHeading: "PT Sans", sans-serif;
+  --fuenteParrafos: "Open Sans", sans-serif;
+
+  --primario: #1a4d42;
+  --primarioClaro: #90dcbb;
+  --blanco: #fff;
+  --negro: #000;
+  --gris: rgb(176, 176, 176);
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box; /* para que el padding y el border no afecte al nacho de los elementos */
+  font-size: 62.5%; /* 1 rem = 10px*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--fuenteParrafos);
+  font-size: 1.6rem;
+  line-height: 2;
+  margin: 10rem;
+  background-color: var(--primarioClaro);
+}
+h1 {
+  font-size: 6rem;
+  color: rgba(0, 0, 0, 0.6);
+
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+h2,
+h3 {
+  font-size: 4rem;
+  color: var(--primario);
+}
+p {
+  text-indent: 3 rem;
+}
+footer {
+  text-align: center;
+}
+.principal {
+  border-top: 2px solid var(--blanco);
+  border-right: 2px solid var(--blanco);
+  border-bottom: 2px solid var(--blanco);
+  border-left: 2px solid var(--blanco);
+  padding: 4rem;
+}
+.remite {
+  text-align: right;
+}
+.negrita {
+  font-weight: bold;
+}
+.cursiva {
+  font-style: italic;
+}
+.nombreremite {
+  color: #ffffff;
+  text-shadow: #474747 3px 5px 2px;
+}
